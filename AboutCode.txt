@@ -1,0 +1,17 @@
+WorldWindow - (constructor) -> Represents a WorldWind window for an HTML canvas
+
+For adding a placemark we cannot directly add it to Place Layer
+Worldwind.Position - to define the placemark location in terms of latitude, longitude, and altitude
+
+for defining the position
+new WorldWind.Position(latitude, longitude, altitude)
+
+======================PLACEMARK===============
+Placemark will define where the mark has to be shown
+
+new WorldWind.Placemark(position,false,placemarkAttributes)
+
+{ position -> position defined above }
+{ false -> if we'll set it true then the size of the placemark will vary according to the camera zoom. }
+{ placemarkAttributes -> the attributes the placemark should have... }
+
